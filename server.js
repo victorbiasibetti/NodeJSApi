@@ -20,7 +20,7 @@ mongoose.connect('mongodb://localhost:27017/nodeapi',
 //app.use('/api', require('./src/routes'))
 
 app.use('/', (req, res) => {
-    return res.json({"HW" : "Hello World"});
+    return res.send("Hello World");
 })
 
 app.listen(3000);
